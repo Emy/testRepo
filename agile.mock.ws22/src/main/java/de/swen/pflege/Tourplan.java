@@ -17,7 +17,6 @@ public class Tourplan {
 	private String name;
 	
 	Tourplan(String name, CentralClientFinder f, SapService s) {
-		// TODO Valdierung des Namens
 		this.name = name;
 		centralFinder = f;
 		service = s;
