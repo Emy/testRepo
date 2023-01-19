@@ -24,7 +24,7 @@ public class Tourplan {
 	
 	/**
 	 * 
-	 * @return List der Klienten (ohne Duplikate)
+	 * @return Liste der Klienten (ohne Duplikate)
 	 */
 	public List<String>  getClients() {
 
@@ -42,7 +42,7 @@ public class Tourplan {
 	 * @return bereinigte Liste der Klienten (keine Duplikate enthalten)
 	 */
 	private List<String> addWithoutDuplicates(List<String> list, List<String> l) {
-		// TODO noch werden keine Duplikate entfernt ...
+		// ... noch werden keine Duplikate entfernt ...
 		
 		return(l);
 	}
