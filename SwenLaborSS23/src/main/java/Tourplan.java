@@ -17,10 +17,17 @@ public class Tourplan {
 
     Tourplan(String name, CentralClientFinder f, SapService s) {
         this.name = name;
+        if ( name.length() <= 3) {
+            throw new IllegalArgumentException("Der Name muss mindestens 3 Zeichen lang sein!");
+        } else if (name.length() >= 32) {
+            throw new IllegalArgumentException("Der Name darf maximal 32 Zeichen lang sein!");
+        } else if (name == null) {
+            throw new IllegalArgumentException("Name darf nicht leer sein!");
+        }
         centralFinder = f;
         service = s;
     }
-
+//das ist ein Test
     /**
      *
      * @return List der Klienten (ohne Duplikate)
