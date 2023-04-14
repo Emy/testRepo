@@ -37,6 +37,10 @@ public class Tourplan {
         list.addAll(centralFinder.getClients(name));
         list = addWithoutDuplicates(list, service.getSapClientsForName(name));
 
+        if (list.isEmpty()) {
+            return (list);
+        }
+
         return (list);
     }
 
